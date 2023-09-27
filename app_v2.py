@@ -33,7 +33,7 @@ article_template = PromptTemplate(
     template="""Schrijf een  support artikel op basis van deze google zoekopdracht {query} en maak daarbij gebruik
                 van de informatie die op het internet is gevonden: {google_search_results}. 
 
-                Houdt het concreet en behulpzaam. 
+                Houdt het concreet en behulpzaam en schrijf het als een internet artikel.  
                  
      """
 )
