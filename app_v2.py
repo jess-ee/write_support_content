@@ -12,9 +12,8 @@ from langchain.utilities import WikipediaAPIWrapper
 from langchain.tools import Tool
 from langchain.utilities import GoogleSerperAPIWrapper
 
-os.environ["SERPER_API_KEY"] = "bed8889ec99b81ef629278a6eccfb6929388c825"
-
-os.environ['OPENAI_API_KEY'] = apikey
+apikey = os.getenv('OPENAI_API_KEY')
+googleapikey = os.getenv('SERPER_API_KEY')
 
 # App framework
 st.title('Van klantvraag ➡️ ➡️ naar support artikel')
